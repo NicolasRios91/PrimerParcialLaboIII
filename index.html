@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/funciones.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Parcial</title>
+</head>
+<body>
+    <div class="cabecera">
+        <h2>LISTA DE MATERIAS</h2>
+        </div>
+        <div class="container">
+    <div id="Spinner" class="spinner"></div>
+    <table>
+        <th>
+            <tr id="titles">
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Cuatrimestre</td>
+                <td>Fecha Final</td>
+                <td>Turno</td>
+            </tr>
+        </th>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <form action="" id="formulario">
+        <input type="button" value="X" id="btnCerrar">
+        <label for="">Nombre Materia</label>
+        <input type="text" id="txtMateria">
+        <label for="">Cuatrimestre</label>
+        <select name="" id="selectMateria">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <label for="">Turno</label>
+        <label for=""><input type="radio"  name="materia" value="1" id="btnMañana">Mañana</label>
+        <label for=""><input type="radio"  name="materia" value="0" id="btnNoche">Noche</label>
+        <label for="">Fecha</label>
+        <input type="date" id="txtFecha">
+
+        <!-- </section> -->
+        <section class="botones">
+        <input type="button" value="Eliminar" id="btnEliminar">
+        <input type="button" value="Modificar" id="btnModificar">
+        </section>
+    </form>
+</div>
+</body>
+</html>
