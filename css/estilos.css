@@ -35,10 +35,10 @@ tr {
 #formulario {
   visibility: hidden;
   background-color: rgb(216 210 193);
-  width: 40%;
+  width: 20%;
   height: 40%;
   padding: 0px 20px 0px 20px;
-  left: 30%;
+  left: 40%;
   top: 30%;
   border: 3px solid black;
   display: flex;
@@ -49,8 +49,11 @@ tr {
 }
 
 input[type="text"] {
-  width: 40%;
+  width: 70%;
   box-sizing: border-box;
+}
+#selectMateria,#txtFecha{
+    width: 40%;
 }
 .botones {
   display: flex;
