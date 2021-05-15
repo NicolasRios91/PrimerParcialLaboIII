@@ -3,7 +3,7 @@ body
     margin: auto;
     width: 80%;
 }
-#titles{
+#titulos{
     color: white;
     background-color: rgb(14, 98, 25);
 }
@@ -31,15 +31,17 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
+tr{
+    height: 30px;
+}
 #formulario{
     visibility:hidden;
     background-color: rgb(163, 161, 165);
     width: 40%;
     height: 40%;
     padding: 0px 20px 0px 20px;
-    bottom: 0;
-    margin-left: 20%;
-    margin-bottom: 20px;
+    left: 30%;
+    top: 30%;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -88,5 +90,5 @@ input[type="button"]{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-tr:nth-child(even) {background: white}
-tr:nth-child(odd) {background: rgb(255, 227, 201)}
+tr:nth-child(odd) {background: white}
+tr:nth-child(even) {background: rgb(255, 227, 201)}
