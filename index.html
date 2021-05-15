@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,47 +10,49 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Parcial</title>
 </head>
+
 <body>
     <div class="cabecera">
         <h2>LISTA DE MATERIAS</h2>
-        </div>
-        <div class="container">
-    <div id="Spinner" class="spinner"></div>
-    <table>
-        <th>
-            <tr id="titulos">
-                <td>Id</td>
-                <td>Nombre</td>
-                <td>Cuatrimestre</td>
-                <td>Fecha Final</td>
-                <td>Turno</td>
-            </tr>
-        </th>
-        <tbody id="tbody">
+    </div>
+    <div class="container">
+        <div id="Spinner" class="spinner"></div>
+        <table>
+            <th>
+                <tr id="titulos">
+                    <td>Id</td>
+                    <td>Nombre</td>
+                    <td>Cuatrimestre</td>
+                    <td>Fecha Final</td>
+                    <td>Turno</td>
+                </tr>
+            </th>
+            <tbody id="tbody">
 
-        </tbody>
-    </table>
-    <form id="formulario">
-        <input type="button" value="X" id="btnCerrar">
-        <label>Nombre Materia</label>
-        <input type="text" id="txtMateria">
-        <label>Cuatrimestre</label>
-        <select id="selectMateria">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <label>Turno</label>
-        <label><input type="radio"  name="materia" value="1" id="btnMañana">Mañana</label>
-        <label><input type="radio"  name="materia" value="0" id="btnNoche">Noche</label>
-        <label>Fecha Final</label>
-        <input type="date" id="txtFecha">
-        <section class="botones">
-        <input type="button" value="Eliminar" id="btnEliminar">
-        <input type="button" value="Modificar" id="btnModificar">
-        </section>
-    </form>
-</div>
+            </tbody>
+        </table>
+        <form id="formulario">
+            <input type="button" value="X" id="btnCerrar">
+            <label>Nombre Materia</label>
+            <input type="text" id="txtMateria">
+            <label>Cuatrimestre</label>
+            <select id="selectMateria">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label>Turno</label>
+            <label><input type="radio" name="materia" value="1" id="btnMañana">Mañana</label>
+            <label><input type="radio" name="materia" value="0" id="btnNoche">Noche</label>
+            <label>Fecha Final</label>
+            <input type="date" id="txtFecha">
+            <section class="botones">
+                <input type="button" class="btnMod" value="Eliminar" id="btnEliminar">
+                <input type="button" class="btnMod" value="Modificar" id="btnModificar">
+            </section>
+        </form>
+    </div>
 </body>
+
 </html>

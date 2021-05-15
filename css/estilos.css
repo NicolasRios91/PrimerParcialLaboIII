@@ -1,94 +1,99 @@
-body
-{
-    margin: auto;
-    width: 80%;
+body {
+  margin: auto;
+  width: 80%;
 }
-#titulos{
+#titulos {
+  color: white;
+  background-color: rgb(14, 98, 25);
+}
+#btnCerrar {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  height: 30px;
+}
+#formulario {
+  visibility: hidden;
+  background-color: rgb(216 210 193);
+  width: 40%;
+  height: 40%;
+  padding: 0px 20px 0px 20px;
+  left: 30%;
+  top: 30%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+input[type="text"] {
+  width: 40%;
+  box-sizing: border-box;
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input[type="button"] {
+  border-style: none;
+}
+.btnMod{
     color: white;
-    background-color: rgb(14, 98, 25);
+    padding: 20px 20px 20px 20px;
 }
-#btnCerrar
-{
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    border-radius:50%;
+#btnModificar {
+  background-color: rgb(7, 53, 7);
 }
-.cabecera{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+#btnEliminar {
+  background-color: rgb(98, 15, 15);
 }
 
-table{
-    border-collapse: collapse;
-    width: 100%;
-}
-tr{
-    height: 30px;
-}
-#formulario{
-    visibility:hidden;
-    background-color: rgb(163, 161, 165);
-    width: 40%;
-    height: 40%;
-    padding: 0px 20px 0px 20px;
-    left: 30%;
-    top: 30%;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    position:fixed;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
+.spinner {
+  visibility: hidden;
+  position: absolute;
+  left: 40%;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
-input[type="text"]
-{
-    width: 40%;
-    box-sizing: border-box;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.botones{
- display: flex;
- flex-direction: row;
- padding-left: 25px;
- padding-right: 25px;
- justify-content: space-between;   
+tr:nth-child(odd) {
+  background: white;
 }
-input[type="button"]{
-    border-style: none;
+tr:nth-child(even) {
+  background: rgb(255, 227, 201);
 }
-#btnModificar{
-    background-color: green;
-}
-#btnEliminar{
-    background-color: red;
-}
-
-.spinner 
-{
-    visibility: hidden;
-    position: absolute;
-    left: 40%;
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin
-{
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-tr:nth-child(odd) {background: white}
-tr:nth-child(even) {background: rgb(255, 227, 201)}

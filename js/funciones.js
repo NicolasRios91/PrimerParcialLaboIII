@@ -43,7 +43,6 @@ function GetLista() {
                 tdCuatrimestre.appendChild(cuatrimestre);
                 tdFechaFinal.appendChild(fechaFinal);
                 tdTurno.appendChild(turno);
-                
 
                 tr.appendChild(tdId);
                 tr.appendChild(tdNombre);
@@ -67,6 +66,7 @@ function MostrarTabla(event) {
     var form = $("formulario");
     form.style.setProperty("visibility", "unset");
     $("txtMateria").style.setProperty("border-color", "unset");//
+    $("txtFecha").style.setProperty("border-color", "unset");
 
     $("txtMateria").value = tr.childNodes[1].innerHTML;
     $("selectMateria").value = tr.childNodes[2].innerHTML;
@@ -83,7 +83,7 @@ function MostrarTabla(event) {
         btnNoche.checked = true;
     }
     var select = $("selectMateria");
-    for (var i = 0; i < select.length; i++) {
+    for (var i = 0; i < select.length; i++) {//deshabilito las opciones
         select.options[i].disabled = true;
     }
 
@@ -125,13 +125,12 @@ function Modificar() {
     var array = fecha.value.split("-");
     var fechaFinal = array[2] + "/" + array[1] + "/" + array[0];//la que paso al json
 
-    var x =new Date();//fechaFinal (que se marco en el Date del formulario) que uso para comparar con fechaHoy
-    x.setFullYear(array[0],array[1]-1,array[2]);
+    var x = new Date();//fechaFinal (que se marco en el Date del formulario) que uso para comparar con fechaHoy
+    x.setFullYear(array[0], array[1] - 1, array[2]);
     var fechaHoy = new Date();
-    if(x < fechaHoy)
-    {
+    if (x < fechaHoy) {
         fechaValida = false;
-        fecha.style.setProperty("border-color","red");
+        fecha.style.setProperty("border-color", "red");
     }
 
     if (materiaValida && fechaValida) {
